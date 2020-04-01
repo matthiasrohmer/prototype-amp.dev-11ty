@@ -14,7 +14,7 @@
       <div>
         <div class="ap-o-sidebar">
           <div class="nav">
-            {% set categories = g.categories('/content/amp-dev/documentation/examples/documentation', locale=doc.locale) %}
+            {% set categories = g.categories('/amp-dev/documentation/examples/documentation', locale=doc.locale) %}
             {% for category, examples in categories %}
             [% if format in {{ examples|map(attribute='formats')|sum(start=[])|unique|list|tojson }} %]
             <ul class="nav-list level-1">

@@ -48,9 +48,9 @@
     <section class="ap-o-wg-content">
       <div class="ap-o-wg-nav">
         <ul>
-          {% for group in g.collection('/content/amp-dev/community/working-groups').list_docs(locale=doc.locale) %}
+          {% for group in g.collection('/amp-dev/community/working-groups').list_docs(locale=doc.locale) %}
           <li class="ap-o-wg-nav-bubble {% if group.name in doc.pod_path %} active {% endif %}">
-            <a href="{{ g.doc('/content/amp-dev/community/working-groups/' + group.name, locale=doc.locale).url.path }}">{{ _(group.full_name) }}</a>
+            <a href="{{ g.doc('/amp-dev/community/working-groups/' + group.name, locale=doc.locale).url.path }}">{{ _(group.full_name) }}</a>
           </li>
           {% endfor %}
         </ul>
@@ -186,7 +186,7 @@
         <h3>{{ _('Contribute to AMP') }}</h3>
         <p>{{ _('The AMP Project would not be possible without help from all members of the community whether you are a developer, content creator or provider of services relevant to AMP There are many ways for you to contribute.') }}</p>
         <div class="ap-o-benefits-overview-link">
-          <a href="{{ g.doc('/content/amp-dev/documentation/guides-and-tutorials/contribute/index.md', locale=doc.locale).url.path }}" class="ap-m-lnk ap-m-lnk-square">
+          <a href="{{ g.doc('/amp-dev/documentation/guides-and-tutorials/contribute/index.md', locale=doc.locale).url.path }}" class="ap-m-lnk ap-m-lnk-square">
             <div class="ap-a-ico ap-m-lnk-icon">
               {% do doc.icons.useIcon('icons/internal.svg') %}
               <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#internal"></use></svg>
@@ -198,7 +198,7 @@
       <div class="ap-o-wg-related-item">
         <h3>{{ _('Governance Body') }}</h3>
         <p>{{ _('Learn more about the Advisory Committee and Technical Steering Committee.') }}</p>
-          <a href="{{ g.doc('/content/amp-dev/community/governance.md', locale=doc.locale).url.path }}" class="ap-m-lnk ap-m-lnk-square">
+          <a href="{{ g.doc('/amp-dev/community/governance.md', locale=doc.locale).url.path }}" class="ap-m-lnk ap-m-lnk-square">
             <div class="ap-a-ico ap-m-lnk-icon">
               {% do doc.icons.useIcon('icons/internal.svg') %}
               <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#internal"></use></svg>

@@ -21,7 +21,7 @@ teaser:
   template_github_home: 'ads/single-image-ads'
  
 document:
-  pages: /content/amp-dev/documentation/templates/single-image-ads/pages
+  pages: /amp-dev/documentation/templates/single-image-ads/pages
   description: Template for your own single image story ad.
 
 url:

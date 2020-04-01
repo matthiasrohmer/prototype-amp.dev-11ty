@@ -6,11 +6,11 @@ $localization:
 $order: 1
 
 flyout:
-    - /content/amp-dev/about/websites.html
-    - /content/amp-dev/about/stories.html
-    - /content/amp-dev/about/ads.html
-    - /content/amp-dev/about/email.html
-    - /content/amp-dev/about/how-amp-works.html
-    - /content/amp-dev/about/mission-and-vision.html
-    - /content/amp-dev/about/use-cases.html
-    - /content/amp-dev/about/success-stories/index.html
+    - /amp-dev/about/websites.html
+    - /amp-dev/about/stories.html
+    - /amp-dev/about/ads.html
+    - /amp-dev/about/email.html
+    - /amp-dev/about/how-amp-works.html
+    - /amp-dev/about/mission-and-vision.html
+    - /amp-dev/about/use-cases.html
+    - /amp-dev/about/success-stories/index.html

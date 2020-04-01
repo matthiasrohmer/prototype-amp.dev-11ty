@@ -153,7 +153,7 @@ Components are building blocks for the web. They combine structure (HTML), styli
 
 Components can have children, just as most other HTML tags can.
 
-AMP’s component system helps you quickly build efficient and responsive features into your pages with minimal effort. The AMP library provides components for building forms and carousels, for integrating page analytics, for making XHR requests to servers, and much more. You can see the full list of available components in the AMP Components reference [here]({{g.doc('/content/amp-dev/documentation/components/index.html', locale=doc.locale).url.path}}).
+AMP’s component system helps you quickly build efficient and responsive features into your pages with minimal effort. The AMP library provides components for building forms and carousels, for integrating page analytics, for making XHR requests to servers, and much more. You can see the full list of available components in the AMP Components reference [here]({{g.doc('/amp-dev/documentation/components/index.html', locale=doc.locale).url.path}}).
 
 As an example, here are three AMP components we could use in our site:
 
@@ -174,12 +174,12 @@ Most HTML tags can be used directly in AMP, but certain tags, such as the `<img>
 For example, in the case of `<amp-img>`, AMP requires us to specify the dimensions of the image and close the tag with `</amp-img>`. AMP needs to understand the layout of the page before assets download. This improves the user experience when your page is loading, but before the image assets have been downloaded. When the images are downloaded, they can be inserted into the page without causing any existing content on the page to move around. This gives the AMP runtime room to decide when to load image assets based on the capabilities of the user’s device and internet connection.
 
 [tip type="note"]
-**Note**: If you want to know more about AMP’s automatic optimizations, you can read about lazy-loading in AMP in the [appendix]({{g.doc('/content/amp-dev/documentation/courses/beginning-course/appendix.md', locale=doc.locale).url.path}}).
+**Note**: If you want to know more about AMP’s automatic optimizations, you can read about lazy-loading in AMP in the [appendix]({{g.doc('/amp-dev/documentation/courses/beginning-course/appendix.md', locale=doc.locale).url.path}}).
 [/tip]
 
 To use the component and to resolve the `<amp-img>` validation error, replace the existing img tag in our page with the AMP equivalent.
 Instead of `<img …>`, write `<amp-img …>` and give your image fixed width of 640 and a height of 480.
-If necessary, reference the documentation for `<amp-img>` [here]({{g.doc('/content/amp-dev/documentation/components/reference/amp-img.md', locale=doc.locale).url.path}}).
+If necessary, reference the documentation for `<amp-img>` [here]({{g.doc('/amp-dev/documentation/components/reference/amp-img.md', locale=doc.locale).url.path}}).
 
 ### Solution
 
@@ -215,9 +215,9 @@ After you have made the change, take a look at your page. The image has the corr
 
 There are other layout types beyond responsive (at least 8 in total).
 
-For example, the `fixed` layout indicates that the component should never be resized from the height and width that are assigned to it. The `intrinsic` layout is similar to the `responsive` layout, except that it has the concept of an intrinsic height and width that cannot be exceeded by the component. Some layouts can only be applied to certain components. The documentation for each component will specify which layouts are valid for that component. You can read about the rest of the layout types [here]({{g.doc('/content/amp-dev/documentation/guides-and-tutorials/learn/amp-html-layout/layouts_demonstrated.html', locale=doc.locale).url.path}}).
+For example, the `fixed` layout indicates that the component should never be resized from the height and width that are assigned to it. The `intrinsic` layout is similar to the `responsive` layout, except that it has the concept of an intrinsic height and width that cannot be exceeded by the component. Some layouts can only be applied to certain components. The documentation for each component will specify which layouts are valid for that component. You can read about the rest of the layout types [here]({{g.doc('/amp-dev/documentation/guides-and-tutorials/learn/amp-html-layout/layouts_demonstrated.html', locale=doc.locale).url.path}}).
 
-All of the layouts that AMP provides can be implemented using plain CSS, but often they can be complicated or have tricky edge cases that require deep knowledge to work around. AMP simplifies the process and exposes many of these layout options to be used on any element in your AMP page. Check out the [official documentation]({{g.doc('/content/amp-dev/documentation/guides-and-tutorials/learn/amp-html-layout/index.md', locale=doc.locale).url.path}}) for more information about the layout system.
+All of the layouts that AMP provides can be implemented using plain CSS, but often they can be complicated or have tricky edge cases that require deep knowledge to work around. AMP simplifies the process and exposes many of these layout options to be used on any element in your AMP page. Check out the [official documentation]({{g.doc('/amp-dev/documentation/guides-and-tutorials/learn/amp-html-layout/index.md', locale=doc.locale).url.path}}) for more information about the layout system.
 
 [tip type="tip"]
 **Tip**: Try selecting different mobile devices from the dropdown menu (see screenshot below) to see how the image adapts to different screen sizes. It’s good practice to test your site on different screen sizes. Browsers on actual mobile devices may behave differently, so when possible, test your webpage on real devices too.
@@ -229,7 +229,7 @@ All of the layouts that AMP provides can be implemented using plain CSS, but oft
 
 Next, let’s embed a YouTube video in our document. Our marketing team at Chico’s Bikes released [this](https://www.youtube.com/watch?v=BlpMQ7fMCzA) video of one of our cheese bikes being constructed.
 
-Use the [`<amp-youtube>`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-youtube.md', locale=doc.locale).url.path}}) documentation to embed this YouTube video under the `<amp-img>` component with the following settings:
+Use the [`<amp-youtube>`]({{g.doc('/amp-dev/documentation/components/reference/amp-youtube.md', locale=doc.locale).url.path}}) documentation to embed this YouTube video under the `<amp-img>` component with the following settings:
 
 - Set the video id to `BlpMQ7fMCzA`.
 

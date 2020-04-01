@@ -21,7 +21,7 @@ teaser:
   template_github_home: 'ads/single-video'
  
 document:
-  pages: /content/amp-dev/documentation/templates/single-video/pages
+  pages: /amp-dev/documentation/templates/single-video/pages
   description: Template for your own single video story.
 
 url:

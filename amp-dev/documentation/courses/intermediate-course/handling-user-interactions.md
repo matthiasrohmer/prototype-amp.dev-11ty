@@ -286,7 +286,7 @@ First, let's build a navigation menu. Our requirements are as follows:
 
 - The menu should contain several links that navigate to other pages.
 
-From the [list]({{g.doc('/content/amp-dev/documentation/components/index.html', locale=doc.locale).url.path}}) of AMP components, we decide on the following:
+From the [list]({{g.doc('/amp-dev/documentation/components/index.html', locale=doc.locale).url.path}}) of AMP components, we decide on the following:
 
 - The menu will be implemented using `<amp-sidebar>`.
 
@@ -325,7 +325,7 @@ In AMP, meanwhile, it would look like this:
 </button>
 {% endraw %}[/sourcecode]
 
-In the `on` attribute above, we see `tap:warning.hide`. In this case, `tap` is the event, `warning` is the ID of the element to act upon, and `hide` is the action to perform. Note that `hide` is one of the [generic actions]({{g.doc('/content/amp-dev/documentation/guides-and-tutorials/learn/amp-actions-and-events.md', locale=doc.locale).url.path}}) that is available on every AMP component and even other HTML elements. The documentation for an AMP component will usually contain a list of actions that can be performed on that component.
+In the `on` attribute above, we see `tap:warning.hide`. In this case, `tap` is the event, `warning` is the ID of the element to act upon, and `hide` is the action to perform. Note that `hide` is one of the [generic actions]({{g.doc('/amp-dev/documentation/guides-and-tutorials/learn/amp-actions-and-events.md', locale=doc.locale).url.path}}) that is available on every AMP component and even other HTML elements. The documentation for an AMP component will usually contain a list of actions that can be performed on that component.
 
 Some actions take the form of functions and may accept arguments. In other cases, actions can be omitted entirely if the action is obvious. In each case, details can be found in the documentation for that component. We'll see examples of each of these types of actions later in this course.
 
@@ -347,7 +347,7 @@ Once open, a sidebar with the ID `sidebar1` can be closed with the following act
 
 - `sidebar1.toggle`
 
-Now, using the documentation for [`<amp-sidebar>`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-sidebar.md', locale=doc.locale).url.path}}) and the list of [AMP Events and Actions]({{g.doc('/content/amp-dev/documentation/guides-and-tutorials/learn/amp-actions-and-events.md', locale=doc.locale).url.path}}), add a navigation menu that matches the following specifications:
+Now, using the documentation for [`<amp-sidebar>`]({{g.doc('/amp-dev/documentation/components/reference/amp-sidebar.md', locale=doc.locale).url.path}}) and the list of [AMP Events and Actions]({{g.doc('/amp-dev/documentation/guides-and-tutorials/learn/amp-actions-and-events.md', locale=doc.locale).url.path}}), add a navigation menu that matches the following specifications:
 
 - In the `<header>` element of the page, add a `<div>` containing the text icon ☰ that toggles the sidebar when tapped.
 
@@ -447,7 +447,7 @@ Some of our `<div>`s function as buttons, so they ought to be focusable via keyb
 
 Uh-oh! Our product manager calls and says that the marketing team has requested too many types of cheese bikes for the site to display in the menu as one single list. (After all, we recently added soft cheeses to our product inventory.) The manager suggests that it would be better to organize the extra sections into sub-menus.
 
-The documentation for <`amp-sidebar>` doesn't explain how to implement a nested sub-menu. We need to find another component that we could use in conjunction with `<amp-sidebar>` that would give us the ability to add a collapsible sub-menu to our sidebar. Looking through the [list]({{g.doc('/content/amp-dev/documentation/components/index.html', locale=doc.locale).url.path}}) of AMP components, in the layout section, we find an `<amp-accordion>` component that matches our needs. We can place the `<amp-accordion>` component inside of the `<amp-sidebar>` component just as we put `<ul>`, `<li>`, and `<a>` tags inside of the `<amp-sidebar>` in the previous exercise.
+The documentation for <`amp-sidebar>` doesn't explain how to implement a nested sub-menu. We need to find another component that we could use in conjunction with `<amp-sidebar>` that would give us the ability to add a collapsible sub-menu to our sidebar. Looking through the [list]({{g.doc('/amp-dev/documentation/components/index.html', locale=doc.locale).url.path}}) of AMP components, in the layout section, we find an `<amp-accordion>` component that matches our needs. We can place the `<amp-accordion>` component inside of the `<amp-sidebar>` component just as we put `<ul>`, `<li>`, and `<a>` tags inside of the `<amp-sidebar>` in the previous exercise.
 
 [tip type="read-on"]
 **Note**: We've actually already practiced putting AMP components inside of other components. Remember when we created our first image carousel by placing `<amp-img>` components inside of the `<amp-carousel>` component? Placing components inside of other components is one way that they can work together effectively. We'll look at other ways to combine components later in this course.
@@ -455,7 +455,7 @@ The documentation for <`amp-sidebar>` doesn't explain how to implement a nested 
 
 {{ image('/static/img/courses/intermediate/image4.png', 465, 387, caption='Two-level navigation menu on the AMP website') }}
 
-Using the documentation for [`<amp-accordion>`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-accordion.md', locale=doc.locale).url.path}}), enhance your sidebar navigation to add sub-menus with the following specifications:
+Using the documentation for [`<amp-accordion>`]({{g.doc('/amp-dev/documentation/components/reference/amp-accordion.md', locale=doc.locale).url.path}}), enhance your sidebar navigation to add sub-menus with the following specifications:
 
 - Convert the "Our Bikes" list item in the `<amp-sidebar>` into an expandable list that contains Chico's Cheese Bicycles' available bikes: Ricotta Racer, Cheddar Chase, and Parmesan Pacer.
 

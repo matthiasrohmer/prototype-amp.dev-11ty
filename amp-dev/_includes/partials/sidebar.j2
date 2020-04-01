@@ -21,7 +21,7 @@
 
           {# Custom content for example-sidebar #}
           {% if type == 'example' %}
-            {% set categories = g.categories('/content/amp-dev/documentation/examples/documentation', locale=doc.locale) %}
+            {% set categories = g.categories('/amp-dev/documentation/examples/documentation', locale=doc.locale) %}
             {% for category, examples in categories %}
             [% if format in {{ examples|map(attribute='formats')|sum(start=[])|unique|list|tojson }} %]
             <ul class="nav-list level-1">
@@ -55,7 +55,7 @@
 
           {# Custom content for component-sidebar #}
           {% elif type == 'component' %}
-            {% set components = g.collection('/content/amp-dev/documentation/components/reference').list_docs(locale=doc.locale) %}
+            {% set components = g.collection('/amp-dev/documentation/components/reference').list_docs(locale=doc.locale) %}
             {% set scope = namespace(initial=components[0].title[4]) %}
             <ul class="nav-list level-1">
               <li class="nav-item level-1">

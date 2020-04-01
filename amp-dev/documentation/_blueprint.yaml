@@ -6,10 +6,10 @@ $localization:
 $order: 2
 
 flyout:
-    - /content/amp-dev/documentation/index.html
-    - /content/amp-dev/documentation/guides-and-tutorials/index.html
-    - /content/amp-dev/documentation/components/index.html
-    - /content/amp-dev/documentation/examples/index.html
-    - /content/amp-dev/documentation/courses/index.html
-    - /content/amp-dev/documentation/templates/index.html
-    - /content/amp-dev/documentation/tools.html
+    - /amp-dev/documentation/index.html
+    - /amp-dev/documentation/guides-and-tutorials/index.html
+    - /amp-dev/documentation/components/index.html
+    - /amp-dev/documentation/examples/index.html
+    - /amp-dev/documentation/courses/index.html
+    - /amp-dev/documentation/templates/index.html
+    - /amp-dev/documentation/tools.html

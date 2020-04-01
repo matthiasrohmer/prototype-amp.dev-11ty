@@ -39,7 +39,7 @@ After selecting the password input element, the [AMP `on="tap:rules.show"` actio
 
 {{ image('/static/img/docs/tutorials/custom-javascript-tutorial/image2.jpg', 500, 604, layout='intrinsic', alt='Image of basic amp script tutorial starter app with password requirements', align='' ) }}
 
-Play around with different passwords! If you press the submit button before all requirements are met `<amp-form>`’s [`pattern`](/content/amp-dev/documentation/components/reference/amp-form.md?format=websites#verification) attribute will throw an error.
+Play around with different passwords! If you press the submit button before all requirements are met `<amp-form>`’s [`pattern`](/amp-dev/documentation/components/reference/amp-form.md?format=websites#verification) attribute will throw an error.
 
 {{ image('/static/img/docs/tutorials/custom-javascript-tutorial/image3.jpg', 500, 605, layout='intrinsic', alt='Image of basic amp script tutorial starter app with unhelpful error', align='' ) }}
 

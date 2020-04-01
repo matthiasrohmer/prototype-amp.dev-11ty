@@ -18,9 +18,9 @@ Content on amp.dev is pulled from two repositories, [amp.dev](https://github.com
 
 *   [Built-in components ](https://github.com/ampproject/amphtml/tree/master/builtins)
 *   [Components](https://github.com/ampproject/amphtml/tree/master/extensions)
-*   [Courses](https://github.com/ampproject/amp.dev/tree/future/pages/content/amp-dev/documentation/courses)
-*   [Examples](https://github.com/ampproject/amp.dev/tree/future/pages/content/amp-dev/documentation/examples)
-*   [Guides & tutorials](https://github.com/ampproject/amp.dev/tree/future/pages/content/amp-dev/documentation/guides-and-tutorials)
+*   [Courses](https://github.com/ampproject/amp.dev/tree/future/pages/amp-dev/documentation/courses)
+*   [Examples](https://github.com/ampproject/amp.dev/tree/future/pages/amp-dev/documentation/examples)
+*   [Guides & tutorials](https://github.com/ampproject/amp.dev/tree/future/pages/amp-dev/documentation/guides-and-tutorials)
 
 There are several other documents that are imported to amp.dev from AMPHTML. They are [listed in this file](https://github.com/ampproject/amp.dev/blob/future/platform/config/imports/spec.json). Don't update these documents in the amp.dev repository – your changes will get overwritten on subsequent builds!  
 

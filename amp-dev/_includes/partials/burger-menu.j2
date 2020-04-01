@@ -17,12 +17,12 @@
     {# Sections #}
     {# Top level sections, defined by their top collection and landing page #}
     {% set sections = [
-      (g.collection('/content/amp-dev/about/'), None),
-      (g.collection('/content/amp-dev/documentation/'), None),
-      (g.collection('/content/amp-dev/community/'), None),
-      (g.collection('/content/amp-dev/events/'), None),
+      (g.collection('/amp-dev/about/'), None),
+      (g.collection('/amp-dev/documentation/'), None),
+      (g.collection('/amp-dev/community/'), None),
+      (g.collection('/amp-dev/events/'), None),
       ('external', (_('Blog'), 'https://blog.amp.dev')),
-      (None, g.doc('/content/amp-dev/support/index.md', locale=doc.locale))
+      (None, g.doc('/amp-dev/support/index.md', locale=doc.locale))
     ] %}
 
     {% for section, homepage in sections %}

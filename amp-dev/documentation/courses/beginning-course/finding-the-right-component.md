@@ -180,7 +180,7 @@ Remember to include the `<amp-social-share>` script in the `<head>`:
 
 Next, we want to add a collection of images of cheese bike products for our users to scroll through. For this, we’ll use an image carousel component. The AMP implementation of a carousel is the component: `<amp-carousel>`. This component is not built in, so you will need to add its script in the page's `<head>`.
 
-When we look at the [documentation]({{g.doc('/content/amp-dev/documentation/components/reference/amp-carousel.md', locale=doc.locale).url.path}}) for `<amp-carousel>`, we’re looking for answers to questions such as:
+When we look at the [documentation]({{g.doc('/amp-dev/documentation/components/reference/amp-carousel.md', locale=doc.locale).url.path}}) for `<amp-carousel>`, we’re looking for answers to questions such as:
 
 - What does this component do?
 
@@ -196,7 +196,7 @@ When we look at the [documentation]({{g.doc('/content/amp-dev/documentation/comp
 
 {{ image('/static/img/courses/beginner/image25.webp', 1024, 771, caption='AMP documentation page for `<amp-carousel>`.') }}
 
-Look at the following items in the [documentation]({{g.doc('/content/amp-dev/documentation/components/reference/amp-carousel.md', locale=doc.locale).url.path}}) of `<amp-carousel>`:
+Look at the following items in the [documentation]({{g.doc('/amp-dev/documentation/components/reference/amp-carousel.md', locale=doc.locale).url.path}}) of `<amp-carousel>`:
 
 - **The description** - At the top of the documentation for every component is a brief description. It summarizes what the component is and why it exists.
 
@@ -208,7 +208,7 @@ Look at the following items in the [documentation]({{g.doc('/content/amp-dev/doc
 
 - **The required script tag** - Located at the top of the documentation, this tag needs to be added to the `<head>` of our site to make the component work. Most components require these additional scripts in order to work.
 
-- **The supported layouts** - We discussed the [layout]({{g.doc('/content/amp-dev/documentation/guides-and-tutorials/learn/amp-html-layout/layouts_demonstrated.html', locale=doc.locale).url.path}}) attribute in a previous section. It controls the way the element is rendered on the screen. This section explains which layouts are valid for this component.
+- **The supported layouts** - We discussed the [layout]({{g.doc('/amp-dev/documentation/guides-and-tutorials/learn/amp-html-layout/layouts_demonstrated.html', locale=doc.locale).url.path}}) attribute in a previous section. It controls the way the element is rendered on the screen. This section explains which layouts are valid for this component.
 
 These items are listed in the documentation for almost all AMP components. Let’s explore the documentation using one of its examples:
 
@@ -236,7 +236,7 @@ These items are listed in the documentation for almost all AMP components. Let�
 </amp-carousel>
 {% endraw %}[/sourcecode]
 
-This carousel contains three images for users to slide through. The attributes of this carousel component instance (`id`, `width`, `height`, `layout`, and `type`) are split into three groups: [attributes common to all HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes) (`id`), [attributes common to all AMP components]({{g.doc('/content/amp-dev/documentation/guides-and-tutorials/learn/common_attributes.md', locale=doc.locale).url.path}}) (`width`, `height`, and `layout`), and attributes unique to the carousel component (`type`).
+This carousel contains three images for users to slide through. The attributes of this carousel component instance (`id`, `width`, `height`, `layout`, and `type`) are split into three groups: [attributes common to all HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes) (`id`), [attributes common to all AMP components]({{g.doc('/amp-dev/documentation/guides-and-tutorials/learn/common_attributes.md', locale=doc.locale).url.path}}) (`width`, `height`, and `layout`), and attributes unique to the carousel component (`type`).
 
 In the documentation for `<amp-carousel>`, we see that the component can have a `type` attribute. It shows that the valid inputs for `type` include `slides` and `carousel`.
 
@@ -293,18 +293,18 @@ Remember to include the `<amp-carousel>` script in the `<head>`:
 
 ## Discovering New Components
 
-As we continue to develop our cheese bike site, we won’t always know the name of the AMP component we want to add to implement some desired new feature. The AMP community has produced a large collection of components that handle many different types of functionality: ads and analytics, dynamic content, layout, media, presentation, and social. The [AMP Components Reference]({{g.doc('/content/amp-dev/documentation/components/index.html', locale=doc.locale).url.path}}) page contains a list of AMP components:
+As we continue to develop our cheese bike site, we won’t always know the name of the AMP component we want to add to implement some desired new feature. The AMP community has produced a large collection of components that handle many different types of functionality: ads and analytics, dynamic content, layout, media, presentation, and social. The [AMP Components Reference]({{g.doc('/amp-dev/documentation/components/index.html', locale=doc.locale).url.path}}) page contains a list of AMP components:
 
 {{ image('/static/img/courses/beginner/image3.webp', 1024, 541, caption='The AMP Component Reference page.') }}
 
-We might still have questions about how the component would act on our site, or we may be unclear about how to use the component in more complex ways. The [AMP By Example]({{g.doc('/content/amp-dev/documentation/examples/index.html', locale=doc.locale).url.path}}) section on amp.dev has pages showcasing many AMP components, showing a variety of ways to configure those components to meet common use cases in modern websites. It also features coding playgrounds where you can run your own experiments.
+We might still have questions about how the component would act on our site, or we may be unclear about how to use the component in more complex ways. The [AMP By Example]({{g.doc('/amp-dev/documentation/examples/index.html', locale=doc.locale).url.path}}) section on amp.dev has pages showcasing many AMP components, showing a variety of ways to configure those components to meet common use cases in modern websites. It also features coding playgrounds where you can run your own experiments.
 
 {{ image('/static/img/courses/beginner/image7.webp', 1024, 699, caption='AMP By Example page for the `<amp-carousel>` component.') }}
 
 ## Exercise 6: Adding Social Sharing Links
 
 The AMP component library includes components for social sharing. Let's add some of those to our site now!
-Navigate and search within the [AMP Components Reference]({{g.doc('/content/amp-dev/documentation/components/index.html', locale=doc.locale).url.path}}) to find the relevant AMP component, then place it under the `<amp-youtube>` element. Use the documentation to add components that gives the user the option to share your page via Email, LinkedIn, Tumblr, and Twitter.
+Navigate and search within the [AMP Components Reference]({{g.doc('/amp-dev/documentation/components/index.html', locale=doc.locale).url.path}}) to find the relevant AMP component, then place it under the `<amp-youtube>` element. Use the documentation to add components that gives the user the option to share your page via Email, LinkedIn, Tumblr, and Twitter.
 
 Recommended style guidelines:
 

@@ -21,7 +21,7 @@ teaser:
   template_github_home: 'ads/multi-image-ads'
  
 document:
-  pages: /content/amp-dev/documentation/templates/multi-image-ads/pages
+  pages: /amp-dev/documentation/templates/multi-image-ads/pages
   description: Template for your own multiple image story ad.
 
 url:

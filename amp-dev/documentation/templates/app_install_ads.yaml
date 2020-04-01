@@ -17,7 +17,7 @@ teaser:
   template_github_home: 'ads/app_install_ads'
 
 document:
-  pages: /content/amp-dev/documentation/templates/app_install_ads/pages
+  pages: /amp-dev/documentation/templates/app_install_ads/pages
   description: An example ad using AMP 4 Ads markup.
 
 url:

@@ -18,7 +18,7 @@ But they should be used with caution, as they may contain bugs or have unexpecte
 There is a risk that some experiments will never ship as features on the AMP Project.
 [/tip]
 
-{% set experimental_components = g.docs('/content/amp-dev/documentation/components/reference')|selectattr('experimental')|list %}
+{% set experimental_components = g.docs('/amp-dev/documentation/components/reference')|selectattr('experimental')|list %}
 {% if experimental_components|length %}
 The following is a list of components that are currently in experimental status and are ready to be tested by developers for first user feedback:
 
@@ -94,7 +94,7 @@ Traditionally, a feature in experimental mode can be used in development, but ca
 
 Origin trials present an opportunity to implement and benefit from a new feature before it’s fully live. The feature will live on the developer's site, rather than guarded by an experiment, and feedback can directly influence the direction of the feature.
 
-{% set trial_components = g.docs('/content/amp-dev/documentation/components/reference')|selectattr('origin_trial')|list %}
+{% set trial_components = g.docs('/amp-dev/documentation/components/reference')|selectattr('origin_trial')|list %}
 {% if trial_components|length %}
 Components in the following list can currently be tested via an origin trial:
 

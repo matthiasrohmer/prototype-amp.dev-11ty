@@ -17,7 +17,7 @@ teaser:
   template_github_home: 'websites/themes_1'
  
 document:
-  pages: /content/amp-dev/documentation/templates/themes_1/pages
+  pages: /amp-dev/documentation/templates/themes_1/pages
   description: 'Example blog theme, "The Scenic".'
 
 url:

@@ -39,9 +39,9 @@ flyout:
   <div class="ap-o-teaser-grid">
     <div class="ap-o-teaser-grid-list">
       {% for teaser_doc in [
-        g.doc('/content/amp-dev/documentation/courses/beginning-course/index.md', locale=doc.locale),
-        g.doc('/content/amp-dev/documentation/courses/intermediate-course/index.md', locale=doc.locale),
-        g.doc('/content/amp-dev/documentation/courses/advanced-course/index.md', locale=doc.locale),
+        g.doc('/amp-dev/documentation/courses/beginning-course/index.md', locale=doc.locale),
+        g.doc('/amp-dev/documentation/courses/intermediate-course/index.md', locale=doc.locale),
+        g.doc('/amp-dev/documentation/courses/advanced-course/index.md', locale=doc.locale),
         ] %}
       {% include '/views/partials/teaser.j2' %}
       {% endfor %}
@@ -76,7 +76,7 @@ flyout:
     "icon_name": "students",
     "headline": "Students",
     "button": {
-      "url": g.doc('/content/amp-dev/documentation/courses/beginning-course/index.md', locale=doc.locale).url.path,
+      "url": g.doc('/amp-dev/documentation/courses/beginning-course/index.md', locale=doc.locale).url.path,
       "text": "Learn AMP"
     }
   },
@@ -84,7 +84,7 @@ flyout:
     "icon_name": "teachers",
     "headline": "Teachers",
     "button": {
-      "url": g.doc('/content/amp-dev/documentation/courses/teachers.md', locale=doc.locale).url.path,
+      "url": g.doc('/amp-dev/documentation/courses/teachers.md', locale=doc.locale).url.path,
       "text": "Teach AMP"
     }
   }

@@ -4,7 +4,7 @@ $title: Crear un blog en directo
 
 Los blogs en directo son páginas web que se actualizan frecuentemente durante el desarrollo de eventos como competiciones deportivas o días de elecciones. En AMP, puedes implementar un blog en directo usando el componente [`amp-live-list`](../../../documentation/components/reference/amp-live-list.md).
 
-Este tutorial ofrece información general sobre el componente [`amp-live-list`](../../../documentation/components/reference/amp-live-list.md) y se centra en algunos detalles de la implementación para blogs en directo, como la [paginación](#pagination) y los [enlaces profundos](#deeplinking). Usaremos el [blog en directo de ejemplo] de AMP By Example ({{g.doc('/content/amp-dev/documentation/guides-and-tutorials/develop/live_blog.md', locale=doc.locale).url.path}}) para mostrar cómo implementar blogs en AMP.
+Este tutorial ofrece información general sobre el componente [`amp-live-list`](../../../documentation/components/reference/amp-live-list.md) y se centra en algunos detalles de la implementación para blogs en directo, como la [paginación](#pagination) y los [enlaces profundos](#deeplinking). Usaremos el [blog en directo de ejemplo] de AMP By Example ({{g.doc('/amp-dev/documentation/guides-and-tutorials/develop/live_blog.md', locale=doc.locale).url.path}}) para mostrar cómo implementar blogs en AMP.
 
 [tip type="success"]
 

@@ -50,13 +50,13 @@
 
 {# Prefix title with section #}
 {% set title_prefix = '' %}
-{% if doc.pod_path.startswith('/content/amp-dev/documentation/examples/documentation/') %}
+{% if doc.pod_path.startswith('/amp-dev/documentation/examples/documentation/') %}
 {% set title_prefix = _('Example: ') %}
-{% elif doc.pod_path.startswith('/content/amp-dev/documentation/examples/previews/') %}
+{% elif doc.pod_path.startswith('/amp-dev/documentation/examples/previews/') %}
 {% set title_prefix = _('Demo: ') %}
-{% elif doc.pod_path.startswith('/content/amp-dev/documentation/components/reference/') %}
+{% elif doc.pod_path.startswith('/amp-dev/documentation/components/reference/') %}
 {% set title_prefix = _('Documentation: ') %}
-{% elif doc.pod_path.startswith('/content/amp-dev/about/success-stories/') and not 'index.html' in doc.pod_path %}
+{% elif doc.pod_path.startswith('/amp-dev/about/success-stories/') and not 'index.html' in doc.pod_path %}
 {% set title_prefix = _('Success Story: ') %}
 {% endif %}
 

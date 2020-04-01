@@ -58,7 +58,7 @@ stage:
         {% if device.video_src %}
         {% if device.video_id %}
         {% if device.url %}
-        <a href="{{ g.doc('/content/amp-dev/about/success-stories/' + device.url + '.yaml', locale=doc.locale).url.path }}">
+        <a href="{{ g.doc('/amp-dev/about/success-stories/' + device.url + '.yaml', locale=doc.locale).url.path }}">
         {% endif %}
           <amp-vimeo data-videoid="{{device.video_id}}" layout="responsive" width="16" height="9">
           </amp-vimeo>
@@ -73,7 +73,7 @@ stage:
         {% endif %}
         {% else %}
         {% if device.url %}
-        <a href="{{ g.doc('/content/amp-dev/about/success-stories/' + device.url + '.yaml', locale=doc.locale).url.path }}">
+        <a href="{{ g.doc('/amp-dev/about/success-stories/' + device.url + '.yaml', locale=doc.locale).url.path }}">
         {% endif %}
           <amp-img alt="{{device.alt}}" height="{{device.height}}" layout="responsive" src="{{device.image_src}}"
             width="{{device.width}}">
@@ -89,7 +89,7 @@ stage:
   {% endif %}
 </section>
 
-  {% set categories = g.categories('/content/amp-dev/about/success-stories', locale=doc.locale) %}
+  {% set categories = g.categories('/amp-dev/about/success-stories', locale=doc.locale) %}
   <section class="ap--intro ap--container">
     <div class="ap--content">
       <p>{{ _('Here we feature interesting and outstanding pages that have been published using AMP. We kindly invite you to look through them to see what AMP is capable of.') }}</p>
@@ -113,7 +113,7 @@ stage:
           [% else %]
           class="ap-m-filter-bubble"
           [% endif %]
-          on="tap:AMP.navigateTo(url='{{ g.doc('/content/amp-dev/about/success-stories/index.html', locale=doc.locale).url.path }}?category={{ category|slug }}')"
+          on="tap:AMP.navigateTo(url='{{ g.doc('/amp-dev/about/success-stories/index.html', locale=doc.locale).url.path }}?category={{ category|slug }}')"
           name="{{ category|slug }}">
           {{ _(category) }}
       </button>

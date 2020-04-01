@@ -152,17 +152,17 @@ $view: /views/overview/custom-content.j2
     <div class="ap-o-teaser-grid">
       <div class="ap-o-teaser-grid-list">
         {% with %}
-        {% set teaser_doc = g.doc('/content/amp-dev/documentation/guides-and-tutorials/start/create/index.md') %}
+        {% set teaser_doc = g.doc('/amp-dev/documentation/guides-and-tutorials/start/create/index.md') %}
         {% include '/views/partials/teaser.j2' %}
         {% endwith %}
 
         {% with %}
-        {% set teaser_doc = g.doc('/content/amp-dev/documentation/guides-and-tutorials/develop/interactivity/index.md') %}
+        {% set teaser_doc = g.doc('/amp-dev/documentation/guides-and-tutorials/develop/interactivity/index.md') %}
         {% include '/views/partials/teaser.j2' %}
         {% endwith %}
 
         {% with %}
-        {% set teaser_doc = g.doc('/content/amp-dev/documentation/guides-and-tutorials/develop/style_and_layout/index.md') %}
+        {% set teaser_doc = g.doc('/amp-dev/documentation/guides-and-tutorials/develop/style_and_layout/index.md') %}
         {% include '/views/partials/teaser.j2' %}
         {% endwith %}
       </div>

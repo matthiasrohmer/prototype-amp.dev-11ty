@@ -8,15 +8,15 @@ Bir kullanım durumu eklemek istiyor musunuz?
 [Bize bildirin.](https://github.com/ampproject/docs/issues/new)
 
 Kendi kullanım durumlarınızla da katkı da bulunabilirsiniz;
-bkz. [Katkı Sağlama]({{g.doc('/content/amp-dev/documentation/guides-and-tutorials/contribute/index.md', locale=doc.locale).url.path}}).
+bkz. [Katkı Sağlama]({{g.doc('/amp-dev/documentation/guides-and-tutorials/contribute/index.md', locale=doc.locale).url.path}}).
 
 ## Sayfa görünümlerini izleme
 
-[`amp-pixel`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-pixel.md', locale=doc.locale).url.path}}) ve [`amp-analytics`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-analytics.md', locale=doc.locale).url.path}}) kullanarak sayfa görünümlerini nasıl izleyeceğinizi öğrenin.
+[`amp-pixel`]({{g.doc('/amp-dev/documentation/components/reference/amp-pixel.md', locale=doc.locale).url.path}}) ve [`amp-analytics`]({{g.doc('/amp-dev/documentation/components/reference/amp-analytics.md', locale=doc.locale).url.path}}) kullanarak sayfa görünümlerini nasıl izleyeceğinizi öğrenin.
 
 ### Amp-pixel kullanma
 
-[`amp-pixel`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-pixel.md', locale=doc.locale).url.path}}) kullanarak belli bir URL›ye sayfa görüntüleme verilerini gönderin:
+[`amp-pixel`]({{g.doc('/amp-dev/documentation/components/reference/amp-pixel.md', locale=doc.locale).url.path}}) kullanarak belli bir URL›ye sayfa görüntüleme verilerini gönderin:
 
 ```html
 <amp-pixel src="https://foo.com/pixel?"></amp-pixel>
@@ -24,7 +24,7 @@ bkz. [Katkı Sağlama]({{g.doc('/content/amp-dev/documentation/guides-and-tutori
 
 ### Amp-analytics kullanma - satıcısız
 
-[`amp-analytics`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-analytics.md', locale=doc.locale).url.path}}) kullanarak belli bir URL›ye sayfa görüntüleme verilerini gönderin:
+[`amp-analytics`]({{g.doc('/amp-dev/documentation/components/reference/amp-analytics.md', locale=doc.locale).url.path}}) kullanarak belli bir URL›ye sayfa görüntüleme verilerini gönderin:
 
 ```html
 <amp-analytics>
@@ -72,7 +72,7 @@ Sayfa görüntüleme verilerini Google Analytics›e gönderin
 
 ## Sayfa tıklamalarını izleme <a name="sayfa-tıklamalarını-izleme"></a>
 
-[`amp-analytics`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-analytics.md', locale=doc.locale).url.path}}) kullanarak,
+[`amp-analytics`]({{g.doc('/amp-dev/documentation/components/reference/amp-analytics.md', locale=doc.locale).url.path}}) kullanarak,
 etkinlik verilerini
 [Google Analytics](https://developers.google.com/analytics/devguides/collection/amp-analytics/) ya da bir URL›ye göndererek sayfa tıklamalarını nasıl izleyeceğinizi öğrenin.
 
@@ -139,7 +139,7 @@ Aşağıdaki örnekte, özel bir ögeye tıklandığında Google Analytics›e b
 
 ## Kaydırmayı izleme <a name="kaydırmayı-izleme"></a>
 
-[Amp-analitik]({{g.doc('/content/amp-dev/documentation/components/reference/amp-analytics.md', locale=doc.locale).url.path}}) kullanarak sayfa kaydırmayı izleyin.
+[Amp-analitik]({{g.doc('/amp-dev/documentation/components/reference/amp-analytics.md', locale=doc.locale).url.path}}) kullanarak sayfa kaydırmayı izleyin.
 Aşağıdaki örnekte, sayfa %25, %50 ve %90 oranında dikey olarak kaydırıldığında, belirlenen URL›ye bir `scroll` etkinliği
  göndermek için `scrollspec` özelliği kullanılmıştır:
 Etkinlik aynı zamanda sayfa, `scroll` genişliğinin %90 oranında yatay olarak
@@ -171,7 +171,7 @@ kaydırıldığında da uyarı verir:
 
 ## Sosyal medya etkileşimlerini izleme <a name="sosyal-medya-etkileşimlerini-izleme"></a>
 
-[Amp-analitik]({{g.doc('/content/amp-dev/documentation/components/reference/amp-analytics.md', locale=doc.locale).url.path}}) kullanarak,
+[Amp-analitik]({{g.doc('/amp-dev/documentation/components/reference/amp-analytics.md', locale=doc.locale).url.path}}) kullanarak,
 etkinlik verilerini
 [Google Analytics](https://developers.google.com/analytics/devguides/collection/amp-analytics/) ya da bir URL›ye göndererek sosyal medya etkileşimlerini nasıl izleyeceğinizi öğrenin.
 

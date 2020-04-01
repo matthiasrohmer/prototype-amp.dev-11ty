@@ -28,7 +28,7 @@ $view: /views/custom.j2
   <div class="ap--teaser-grid">
     <div class="ap-o-teaser-grid">
       <div class="ap-o-teaser-grid-list">
-        {% for teaser_doc in g.collection('/content/amp-dev/support/faq').list_docs(locale=doc.locale) %}
+        {% for teaser_doc in g.collection('/amp-dev/support/faq').list_docs(locale=doc.locale) %}
         {% include '/views/partials/teaser.j2' %}
         {% endfor %}
       </div>

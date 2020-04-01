@@ -245,7 +245,7 @@ In order to keep our brand in our customers' minds, we want to send out a regula
 
 - If the form submission succeeds, a welcome message with the user's name should be displayed.
 
-In a non-AMP page, we might reach for a basic HTML form element to collect our users' information. AMP provides an [`<amp-form>`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-form.md', locale=doc.locale).url.path}}) component, but this component actually uses the element name "form" as well. So, what's the difference?
+In a non-AMP page, we might reach for a basic HTML form element to collect our users' information. AMP provides an [`<amp-form>`]({{g.doc('/amp-dev/documentation/components/reference/amp-form.md', locale=doc.locale).url.path}}) component, but this component actually uses the element name "form" as well. So, what's the difference?
 
 In this section, we'll explore how AMP forms differ from traditional forms, and how to handle the response from the server when submitting AMP forms.
 
@@ -255,17 +255,17 @@ AMP forms extend the behavior of regular HTML forms by providing easier ways to 
 
 AMP forms also provide additional possibilities on the inputs that make up the forms. For example, AMP adds `change` and `input-debounced` events to each input field to make it easier to track when users change information. AMP provides additional CSS hooks to make styling your forms easier. Lastly, AMP provides some polyfills that make sure your forms work well in all browsers.
 
-AMP provides a great deal of versatility for building forms. It's worth spending some time browsing the documentation for [`<amp-form>`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-form.md', locale=doc.locale).url.path}}) to absorb all of the various features that AMP provides.
+AMP provides a great deal of versatility for building forms. It's worth spending some time browsing the documentation for [`<amp-form>`]({{g.doc('/amp-dev/documentation/components/reference/amp-form.md', locale=doc.locale).url.path}}) to absorb all of the various features that AMP provides.
 
 ## Exercise 3: Building the Subscription Form
 
-First, let's add a heading for our new subscription form. Add the following snippet just below the [`<amp-youtube>`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-youtube.md', locale=doc.locale).url.path}}) component:
+First, let's add a heading for our new subscription form. Add the following snippet just below the [`<amp-youtube>`]({{g.doc('/amp-dev/documentation/components/reference/amp-youtube.md', locale=doc.locale).url.path}}) component:
 
 [sourcecode:html]
 {% raw %}<h2 class="main-heading">Subscribe to our Newsletter</h2>
 {% endraw %}[/sourcecode]
 
-Using the documentation for [`<amp-form>`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-form.md', locale=doc.locale).url.path}}), add a form below your new header that matches the following specifications:
+Using the documentation for [`<amp-form>`]({{g.doc('/amp-dev/documentation/components/reference/amp-form.md', locale=doc.locale).url.path}}), add a form below your new header that matches the following specifications:
 
 The form should:
 
@@ -333,7 +333,7 @@ At this point, our subscription form submits the user's name and email, but the 
 
 `<amp-form>` provides `submit-success` and `submit-error` attributes. These can be placed on elements such as `<div>` tags that are direct children of the `<form>` element. When a form is submitted and the server responds successfully, contents in elements tagged with `submit-success` are displayed. Similarly, when a form is submitted and the server returns an error, contents in elements tagged with `submit-error` are displayed.
 
-AMP treats elements tagged with submit-success and submit-error differently than the contents of other components we've seen and used so far. That is because these elements use templates. The most common type of template used in AMP pages is [`<amp-mustache>`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-mustache.md', locale=doc.locale).url.path}}) This is based on the commonly used [Mustache.js](https://mustache.github.io/) syntax. Mustache templates describe HTML content in which sections are missing and need to be filled in with information from a server. The templates are written in HTML, and the missing sections are identified by {% raw %}`{{ }}`{% endraw %} mustache braces.
+AMP treats elements tagged with submit-success and submit-error differently than the contents of other components we've seen and used so far. That is because these elements use templates. The most common type of template used in AMP pages is [`<amp-mustache>`]({{g.doc('/amp-dev/documentation/components/reference/amp-mustache.md', locale=doc.locale).url.path}}) This is based on the commonly used [Mustache.js](https://mustache.github.io/) syntax. Mustache templates describe HTML content in which sections are missing and need to be filled in with information from a server. The templates are written in HTML, and the missing sections are identified by {% raw %}`{{ }}`{% endraw %} mustache braces.
 
 For example, when given the following data:
 
@@ -394,11 +394,11 @@ The results will look like this:
 {% endraw %}[/sourcecode]
 
 [tip type="read-on"]
-**Note**: Mustache templates have a wide range of other capabilities. You can iterate over a collection of values to display things like lists or tables of data. You can show content only if a particular variable is defined (or only if it's not defined). You can also display unescaped HTML content. To learn more, read the [`<amp-mustache>`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-mustache.md', locale=doc.locale).url.path}}) documentation![/tip]
+**Note**: Mustache templates have a wide range of other capabilities. You can iterate over a collection of values to display things like lists or tables of data. You can show content only if a particular variable is defined (or only if it's not defined). You can also display unescaped HTML content. To learn more, read the [`<amp-mustache>`]({{g.doc('/amp-dev/documentation/components/reference/amp-mustache.md', locale=doc.locale).url.path}}) documentation![/tip]
 
 ## Exercise 4: Confirming Newsletter Subscriptions
 
-Now it's time to add success and error handling to our subscription form as well. Use the [`<amp-mustache>`]({{g.doc('/content/amp-dev/documentation/components/reference/amp-mustache.md', locale=doc.locale).url.path}}) and [Success/Error Response Rendering]({{g.doc('/content/amp-dev/documentation/components/reference/amp-form.md', locale=doc.locale).url.path}}#success/error-response-rendering) documentation to add success and error messages to your subscription form that meet the following requirements:
+Now it's time to add success and error handling to our subscription form as well. Use the [`<amp-mustache>`]({{g.doc('/amp-dev/documentation/components/reference/amp-mustache.md', locale=doc.locale).url.path}}) and [Success/Error Response Rendering]({{g.doc('/amp-dev/documentation/components/reference/amp-form.md', locale=doc.locale).url.path}}#success/error-response-rendering) documentation to add success and error messages to your subscription form that meet the following requirements:
 
 * The success message should thank the user by name for subscribing. **HINT**: The property from the server response to use in the template is `{% raw %}{{{% endraw %}name}}`.
 

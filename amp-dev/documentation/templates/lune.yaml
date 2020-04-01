@@ -17,7 +17,7 @@ teaser:
   template_github_home: 'websites/lune'
  
 document:
-  pages: /content/amp-dev/documentation/templates/lune/pages
+  pages: /amp-dev/documentation/templates/lune/pages
   description: Trendy furniture site with interesting image transitions.
 
 url:

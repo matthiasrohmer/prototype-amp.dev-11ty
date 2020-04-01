@@ -17,7 +17,7 @@ teaser:
   template_github_home: 'websites/travel'
  
 document:
-  pages: /content/amp-dev/documentation/templates/travel/pages
+  pages: /amp-dev/documentation/templates/travel/pages
   description: A sample travel site with visually attractive filters.
 
 url:

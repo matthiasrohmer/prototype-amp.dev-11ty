@@ -17,7 +17,7 @@ teaser:
   template_github_home: 'websites/land-see'
 
 document:
-  pages: /content/amp-dev/documentation/templates/land-see/pages
+  pages: /amp-dev/documentation/templates/land-see/pages
   description: A trendy fashion and design e-commerce site with interesting content to read.
 
 url:

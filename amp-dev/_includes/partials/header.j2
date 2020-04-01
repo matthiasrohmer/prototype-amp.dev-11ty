@@ -1,6 +1,6 @@
 {% set second_level = doc.sub_navigation or doc.collection.sub_navigation or None %}
 {% if not second_level %}
-{% set second_level = g.collection('/content/amp-dev/' + doc.pod_path.split('/')[3]).sub_navigation %}
+{% set second_level = g.collection('/amp-dev/' + doc.pod_path.split('/')[3]).sub_navigation %}
 {% endif %}
 
 {# Tests if one of the top level navigation items needs to be active #}
@@ -21,7 +21,7 @@
   {{ banner if show_banner }}
 
   <div class="ap-o-header">
-    <a class="ap-o-header-home" href="{{g.doc('/content/amp-dev/index.html', locale=doc.locale).url.path}}">
+    <a class="ap-o-header-home" href="{{g.doc('/amp-dev/index.html', locale=doc.locale).url.path}}">
       {% do doc.icons.useIcon('/icons/logo.svg') %}
       <svg class="ap-o-header-home-logo"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>
       <span class="ap-o-header-home-title">AMP</span>
@@ -31,12 +31,12 @@
     <nav class="ap-o-header-main">
       {# Top level sections, defined by their top collection and landing page #}
       {% set sections = [
-        (g.collection('/content/amp-dev/about/'), None),
-        (g.collection('/content/amp-dev/documentation/'), None),
-        (g.collection('/content/amp-dev/community/'), None),
-        (g.collection('/content/amp-dev/events/'), None),
+        (g.collection('/amp-dev/about/'), None),
+        (g.collection('/amp-dev/documentation/'), None),
+        (g.collection('/amp-dev/community/'), None),
+        (g.collection('/amp-dev/events/'), None),
         ('external', (_('Blog'), 'https://blog.amp.dev')),
-        (g.collection('/content/amp-dev/support/'), None)
+        (g.collection('/amp-dev/support/'), None)
       ] %}
 
       {% for section, homepage in sections %}

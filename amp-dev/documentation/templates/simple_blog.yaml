@@ -17,7 +17,7 @@ teaser:
   template_github_home: 'websites/blog'
  
 document:
-  pages: /content/amp-dev/documentation/templates/blog/pages
+  pages: /amp-dev/documentation/templates/blog/pages
   description: Simple blog template.
 
 url:
