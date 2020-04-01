@@ -1,0 +1,22 @@
+{% extends '/layouts/default.njk' %}
+
+{% block styles %}
+{{ super() }}
+
+{% do doc.styles.addCssFile('css/components/molecules/table.css') %}
+{% do doc.styles.addCssFile('css/components/molecules/code-snippet.css') %}
+
+{% do doc.styles.addCssFile('css/components/templates/guide.css') %}
+{% endblock %}
+
+{% block main %}
+{% include 'views/partials/sidebar-toggle-observer.njk' %}
+{% include 'views/partials/format-filter-hint.njk' %}
+<main class="ap--main ap-t-guide">
+  <div class="ap--container">
+    {% include 'views/partials/sidebar-toggle.njk' %}
+    {% include 'views/partials/content.njk' %}
+  </div>
+</main>
+{% include 'views/partials/sidebar.njk' %}
+{% endblock %}

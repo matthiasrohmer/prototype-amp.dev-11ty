@@ -1,0 +1,10 @@
+{% extends '/layouts/default.njk' %}
+
+{% block styles %}
+{{ super() }}
+
+{% endblock %}
+
+{% block main %}
+{{ doc.html|render|safe }}
+{% endblock %}
