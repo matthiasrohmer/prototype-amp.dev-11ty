@@ -1,0 +1,197 @@
+$title: 'Working Group: Foundation Onboarding'
+$titles:
+  navigation: Working Groups
+html_url: 'https://github.com/ampproject/wg-foundation-onboarding'
+name: foundation-onboarding
+full_name: Foundation Onboarding
+facilitator:
+  login: tobie
+  name: Tobie Langel
+description: >-
+  The Foundation Onboarding Working Group is responsible for ensuring the
+  successful completion of the OpenJS Foundation's onboarding process. For more
+  context, see the [AMP
+  announcement](https://blog.amp.dev/2019/10/10/amp-is-joining-the-openjs-foundation-incubation-program/)
+  and [OpenJS Foundation
+  announcement](https://openjsf.org/blog/2019/10/10/openjs-foundation-welcomes-amp-project-to-help-improve-user-experience-on-the-web/)
+  of AMP joining the OpenJS Foundation's incubation program. To graduate from
+  the incubation program, AMP must complete the [onboarding
+  checklist](https://github.com/openjs-foundation/cross-project-council/issues/350).
+  The WG maintains an org-level [project
+  board](https://github.com/orgs/ampproject/projects/4) to track all issues
+  related to this effort. The tentative date for graduation is December 10,
+  2019.
+issues:
+  - title: wg-foundation-onboarding Meeting 2020-04-04
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/27'
+    created_at: Tue Mar 24 2020
+    author: tobie
+    number: 27
+    labels:
+      - name: Meeting
+        background_color: 5bd125
+        txt_color: fff
+  - title: wg-foundation-onboarding Meeting 2020-03-24
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/26'
+    created_at: Tue Mar 24 2020
+    author: tobie
+    number: 26
+    labels:
+      - name: Meeting
+        background_color: 5bd125
+        txt_color: fff
+  - title: wg-foundation-onboarding Meeting 2020-03-10
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/25'
+    created_at: Tue Mar 03 2020
+    author: tobie
+    number: 25
+    labels:
+      - name: Meeting
+        background_color: 5bd125
+        txt_color: fff
+  - title: wg-foundation-onboarding Meeting 2019-12-03
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/23'
+    created_at: Tue Dec 03 2019
+    author: tobie
+    number: 23
+    labels:
+      - name: Meeting
+        background_color: 5bd125
+        txt_color: fff
+  - title: wg-foundation-onboarding Meeting 2019-11-26
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/22'
+    created_at: Tue Nov 26 2019
+    author: tobie
+    number: 22
+    labels:
+      - name: Meeting
+        background_color: 5bd125
+        txt_color: fff
+  - title: wg-foundation-onboarding Meeting 2019-11-19
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/20'
+    created_at: Wed Nov 13 2019
+    author: tobie
+    number: 20
+    labels:
+      - name: Meeting
+        background_color: 5bd125
+        txt_color: fff
+  - title: Transfer amp.dev domain name to OpenJS Foundation
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/18'
+    created_at: Wed Nov 06 2019
+    author: tobie
+    number: 18
+    labels:
+      - name: post-graduation
+        background_color: 3da6ed
+        txt_color: fff
+  - title: >-
+      List and agree to post-graduation transfer of trademarks to the OpenJS
+      Foundation
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/17'
+    created_at: Wed Nov 06 2019
+    author: tobie
+    number: 17
+    labels: []
+  - title: Determine GitHub subscription to use for ampproject
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/14'
+    created_at: Tue Nov 05 2019
+    author: mrjoro
+    number: 14
+    labels: []
+  - title: Update links to Google privacy policy
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/13'
+    created_at: Sun Nov 03 2019
+    author: tobie
+    number: 13
+    labels:
+      - name: blocked
+        background_color: e00665
+        txt_color: '000'
+  - title: Update legal copyright notice on project website and github
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/12'
+    created_at: Sun Nov 03 2019
+    author: tobie
+    number: 12
+    labels:
+      - name: blocked
+        background_color: e00665
+        txt_color: '000'
+  - title: Identify individuals from the project to join the CPC
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/11'
+    created_at: Sun Nov 03 2019
+    author: tobie
+    number: 11
+    labels:
+      - name: file against CPC
+        background_color: fef2c0
+        txt_color: '000'
+  - title: >-
+      Confirm disclaimer is only necessary if OpenCollective is used to receive
+      funds
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/10'
+    created_at: Sun Nov 03 2019
+    author: tobie
+    number: 10
+    labels: []
+  - title: Transfer trademarks to the OpenJS Foundation
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/8'
+    created_at: Sun Nov 03 2019
+    author: tobie
+    number: 8
+    labels:
+      - name: post-graduation
+        background_color: 3da6ed
+        txt_color: fff
+  - title: 'Confirm required files in place (CODE_OF_CONDUCT.md, LICENSE.md)'
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/7'
+    created_at: Sun Nov 03 2019
+    author: tobie
+    number: 7
+    labels: []
+  - title: Transfer amp.dev domain name to OpenJS Foundation
+    html_url: 'https://github.com/ampproject/wg-foundation-onboarding/issues/3'
+    created_at: Thu Oct 31 2019
+    author: tobie
+    number: 3
+    labels:
+      - name: blocked
+        background_color: e00665
+        txt_color: '000'
+members:
+  - login: brianwarner
+    name: Brian Warner
+  - login: CrystalOnScript
+    name: Crystal Lambert
+  - login: Gregable
+    name: Greg Grothaus
+  - login: jrozier
+    name: Joey Rozier
+  - login: jorydotcom
+    name: Jory Burson
+  - login: nainar
+    name: Naina Raisinghani
+  - login: rsimha
+    name: Raghu Simha
+  - login: sebastianbenz
+    name: Sebastian Benz
+communication:
+  - channel: slack
+    name: Slack
+    content:
+      - item: >-
+          The Foundation Onboarding Working Group members will use
+          `#wg-foundation-onboarding` channel on AMP's Slack
+          ([signup](https://docs.google.com/forms/d/e/1FAIpQLSd83J2IZA6cdR6jPwABGsJE8YL4pkypAbKMGgUZZriU7Qu6Tg/viewform?fbzx=4406980310789882877))
+          for real-time discussion. The channel is open to anyone, regardless of
+          membership in the working group.
+      - item: >-
+          The Foundation Onboarding Working Group will have weekly meetings to
+          track onboarding progress, open to the community. Notes from this
+          meeting will serve as weekly status updates. Meetings are listed in
+          the issue tracker using the "Meeting" label.
+      - item: >-
+          We will track onboarding work using the [ampproject Onboarding GitHub
+          project](https://github.com/orgs/ampproject/projects/4) and the
+          [OpenJS Foundation onboarding checklist
+          issue](https://github.com/openjs-foundation/cross-project-council/issues/350).

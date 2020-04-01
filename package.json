@@ -1,0 +1,32 @@
+{
+  "name": "prototype-amp.dev-11ty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "npx @11ty/eleventy --serve",
+    "start": "npx @11ty/eleventy --serve",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/matthiasrohmer/prototype-amp.dev-11ty.git"
+  },
+  "keywords": [
+    "amp.dev",
+    "nunjucks",
+    "11ty",
+    "eleventy",
+    "amp",
+    "ampproject"
+  ],
+  "author": "Matthias Rohmer <matthias.rohmer@jvm.de>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/matthiasrohmer/prototype-amp.dev-11ty/issues"
+  },
+  "homepage": "https://github.com/matthiasrohmer/prototype-amp.dev-11ty#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}

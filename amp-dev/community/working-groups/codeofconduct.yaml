@@ -1,0 +1,38 @@
+$title: 'Working Group: Code of Conduct'
+$titles:
+  navigation: Working Groups
+html_url: 'https://github.com/ampproject/wg-codeofconduct'
+name: codeofconduct
+full_name: Code of Conduct
+facilitator:
+  login: nainar
+  name: Naina Raisinghani
+description: >-
+  Responsible for enforcing AMP's Code of Conduct. (The Technical Steering
+  Committee delegates its responsibility for enforcement of the Code of Conduct
+  to this Working Group.)
+issues:
+  - title: Adopt the OpenJS Foundation Code of Conduct
+    html_url: 'https://github.com/ampproject/wg-codeofconduct/issues/6'
+    created_at: Tue Oct 22 2019
+    author: tobie
+    number: 6
+    labels: []
+  - title: Regular transparency reports by CoC WG
+    html_url: 'https://github.com/ampproject/wg-codeofconduct/issues/4'
+    created_at: Wed Jan 16 2019
+    author: nainar
+    number: 4
+    labels: []
+members:
+  - login: danielrozenberg
+    name: Daniel Rozenberg
+  - login: estherkim
+    name: Esther Kim
+  - login: jpettitt
+    name: John Pettitt
+communication:
+  - channel: email
+    name: Email
+    content:
+      - item: 'Emailing the following alias: `amphtml-coc@googlegroups.com`.'

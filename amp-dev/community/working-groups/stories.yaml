@@ -1,0 +1,114 @@
+$title: 'Working Group: Stories'
+$titles:
+  navigation: Working Groups
+html_url: 'https://github.com/ampproject/wg-stories'
+name: stories
+full_name: Stories
+facilitator:
+  login: newmuis
+  name: Jon Newmuis
+description: >-
+  The wg-stories Working Group is responsible for implementing and improving
+  AMP's story format (amp-story).
+issues:
+  - title: wg-stories Status Update 2020-03-16
+    html_url: 'https://github.com/ampproject/wg-stories/issues/30'
+    created_at: Mon Mar 16 2020
+    author: newmuis
+    number: 30
+    labels:
+      - name: 'Type: Status Update'
+        background_color: d86ab0
+        txt_color: '000'
+  - title: wg-stories Meeting 2020-03-17
+    html_url: 'https://github.com/ampproject/wg-stories/issues/29'
+    created_at: Mon Mar 16 2020
+    author: newmuis
+    number: 29
+    labels:
+      - name: 'Type: Meeting'
+        background_color: 9f50d8
+        txt_color: '000'
+  - title: >-
+      Discussion: Suggestion to establish 9:16 as default aspect ratio for Web
+      Stories (including in the Desktop viewer)
+    html_url: 'https://github.com/ampproject/wg-stories/issues/28'
+    created_at: Mon Mar 09 2020
+    author: pbakaus
+    number: 28
+    labels:
+      - name: 'Type: Discussion'
+        background_color: b39eed
+        txt_color: '000'
+  - title: wg-stories Status Update 2020-03-02
+    html_url: 'https://github.com/ampproject/wg-stories/issues/27'
+    created_at: Fri Feb 28 2020
+    author: newmuis
+    number: 27
+    labels:
+      - name: 'Type: Status Update'
+        background_color: d86ab0
+        txt_color: '000'
+  - title: wg-stories Meeting 2020-02-13
+    html_url: 'https://github.com/ampproject/wg-stories/issues/26'
+    created_at: Mon Feb 10 2020
+    author: newmuis
+    number: 26
+    labels:
+      - name: 'Type: Meeting'
+        background_color: 9f50d8
+        txt_color: '000'
+  - title: wg-stories Status Update 2020-02-03
+    html_url: 'https://github.com/ampproject/wg-stories/issues/25'
+    created_at: Fri Jan 31 2020
+    author: newmuis
+    number: 25
+    labels:
+      - name: 'Type: Status Update'
+        background_color: d86ab0
+        txt_color: '000'
+  - title: wg-stories Working Group Update - January 2020
+    html_url: 'https://github.com/ampproject/wg-stories/issues/24'
+    created_at: Thu Jan 23 2020
+    author: newmuis
+    number: 24
+    labels:
+      - name: 'Type: Roadmap'
+        background_color: 9ae876
+        txt_color: '000'
+members:
+  - login: jackbsteinberg
+    name: Jack Steinberg
+  - login: gmajoulet
+    name: Gabriel Majoulet
+  - login: Enriqe
+    name: Enrique Marroquin
+  - login: vinaymahag
+    name: Vinay Mahagaokar
+  - login: jasti
+    name: Vamsee Jasti
+  - login: hongwei1990
+    name: Wei Hong
+communication:
+  - channel: slack
+    name: Slack
+    content:
+      - item: >-
+          The Stories Working Group members will use `#wg-stories` channel on
+          AMP's Slack
+          ([signup](https://docs.google.com/forms/d/e/1FAIpQLSd83J2IZA6cdR6jPwABGsJE8YL4pkypAbKMGgUZZriU7Qu6Tg/viewform?fbzx=4406980310789882877))
+          for real-time discussion. The channel is open to anyone, regardless of
+          membership in Stories working group.
+  - channel: github
+    name: GitHub
+    content:
+      - item: >-
+          Stories Working Group will post **Status Updates** every two weeks as
+          an issue labeled with `Type: Status Update` in this repository.
+      - item: >-
+          Stories Working Group will post **Announcements and Notices**
+          regarding events as an issue labeled with `Type: Event` in this
+          repository.
+      - item: >-
+          Stories Working Group will post **Quarterly Roadmap** as an issue
+          labeled with `Type: Roadmap` in this repository.

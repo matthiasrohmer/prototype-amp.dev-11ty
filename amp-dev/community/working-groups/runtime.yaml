@@ -1,0 +1,48 @@
+$title: 'Working Group: Runtime'
+$titles:
+  navigation: Working Groups
+html_url: 'https://github.com/ampproject/wg-runtime'
+name: runtime
+full_name: Runtime
+facilitator:
+  login: jridgewell
+  name: Justin Ridgewell
+description: >-
+  The Runtime Working Group is responsible for AMP's core runtime, such as
+  layout/rendering and data binding.
+issues:
+  - title: wg-runtime Status Update 2020-03-16
+    html_url: 'https://github.com/ampproject/wg-runtime/issues/30'
+    created_at: Mon Mar 16 2020
+    author: jridgewell
+    number: 30
+    labels:
+      - name: 'Type: Status Update'
+        background_color: f254b5
+        txt_color: '000'
+members:
+  - login: choumx
+    name: William Chou
+  - login: samouri
+    name: Jake Fried
+communication:
+  - channel: slack
+    name: Slack
+    content:
+      - item: >-
+          Runtime WG's members will use `#wg-runtime` channel on AMP's Slack
+          ([signup](https://docs.google.com/forms/d/e/1FAIpQLSd83J2IZA6cdR6jPwABGsJE8YL4pkypAbKMGgUZZriU7Qu6Tg/viewform?fbzx=4406980310789882877))
+          for real-time discussion. The channel is open to anyone, regardless of
+          membership in Runtime WG.
+  - channel: github
+    name: GitHub
+    content:
+      - item: >-
+          Runtime WG will post **Status Updates** every two weeks as an issue
+          labeled with `Type: Status Update` in this repository.
+      - item: >-
+          Runtime WG will post **Announcements and Notices** regarding events as
+          an issue labeled with `Type: Event` in this repository.
+      - item: >-
+          Runtime WG will post **Quarterly Roadmap** as an issue labeled with
+          `Type: Roadmap` in this repository.

@@ -1,0 +1,15 @@
+$title: 'Working Group: Viewers'
+$titles:
+  navigation: Working Groups
+html_url: 'https://github.com/ampproject/wg-viewers'
+name: viewers
+full_name: Viewers
+facilitator:
+  login: ericfs
+  name: Eric Steinlauf
+description: >-
+  Responsible for ensuring support for AMP viewers and for the amp-viewer
+  project
+issues: []
+members: []
+communication: []

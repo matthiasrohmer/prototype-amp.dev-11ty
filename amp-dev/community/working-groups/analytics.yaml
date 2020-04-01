@@ -1,0 +1,61 @@
+$title: 'Working Group: Analytics'
+$titles:
+  navigation: Working Groups
+html_url: 'https://github.com/ampproject/wg-analytics'
+name: analytics
+full_name: Analytics
+facilitator:
+  login: zhouyx
+  name: Yuxuan Zhou
+description: >-
+  wg-analytics Working Group is responsible for analytics features and
+  integrations in AMP.
+issues:
+  - title: wg-analytics Status Update 2020-03-16
+    html_url: 'https://github.com/ampproject/wg-analytics/issues/19'
+    created_at: Mon Mar 16 2020
+    author: zhouyx
+    number: 19
+    labels:
+      - name: 'Type: Status Update'
+        background_color: '5319e7'
+        txt_color: fff
+  - title: wg-analytics Quarterly Status Update 2020-03
+    html_url: 'https://github.com/ampproject/wg-analytics/issues/18'
+    created_at: Wed Mar 11 2020
+    author: zhouyx
+    number: 18
+    labels:
+      - name: 'Type: Status Update'
+        background_color: '5319e7'
+        txt_color: fff
+members:
+  - login: calebcordry
+    name: Caleb Cordry
+  - login: lannka
+    name: Hongfei Ding
+  - login: micajuine-ho
+    name: Micajuine Ho
+communication:
+  - channel: slack
+    name: Slack
+    content:
+      - item: >-
+          The Analytics Working Group members will use `#wg-analytics` channel
+          on AMP's Slack
+          ([signup](https://docs.google.com/forms/d/e/1FAIpQLSd83J2IZA6cdR6jPwABGsJE8YL4pkypAbKMGgUZZriU7Qu6Tg/viewform?fbzx=4406980310789882877))
+          for real-time discussion. The channel is open to anyone, regardless of
+          membership in Analytics working group.
+  - channel: github
+    name: GitHub
+    content:
+      - item: >-
+          Analytics Working Group will post **Status Updates** every two weeks
+          as an issue labeled with `Type: Status Update` in this repository.
+      - item: >-
+          Analytics Working Group will post **Announcements and Notices**
+          regarding events as an issue labeled with `Type: Event` in this
+          repository.
+      - item: >-
+          Analytics Working Group will post **Quarterly Roadmap** as an issue
+          labeled with `Type: Roadmap` in this repository.

@@ -1,0 +1,69 @@
+{% do doc.styles.addCssFile('css/components/molecules/code-snippet.css') %}
+
+<div class="ap-o-component-intro">
+  {% if doc.teaser %}
+  <p class="ap-o-component-intro-description">{{ doc.teaser.text }}</p>
+  {% endif %}
+
+  {% if doc.scripts %}
+  <div class="ap-o-component-intro-box ap-o-component-intro-box-scripts">
+    <h4>Required Scripts</h4>
+    {% for script in doc.scripts %}
+    <div class="ap-o-component-intro-box-scripts-item">
+      <code>{{ script }}</code>
+      <amp-iframe
+          width="24"
+          height="24"
+          layout="fixed"
+          sandbox="allow-scripts"
+          src="{{ podspec.base_urls.platform }}/shared/copy-script#{{ script|urlencode }}">
+        <div placeholder></div>
+      </amp-iframe>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if doc.layouts %}
+  <div class="ap-o-component-intro-box ap-o-component-intro-box-layouts">
+    <h4>Supported Layouts</h4>
+    <div class="ap-o-component-intro-box-layouts-items">
+      {% for item in doc.layouts %}
+      <a href="/documentation/guides-and-tutorials/learn/amp-html-layout/layouts_demonstrated.html#{{ item }}">
+        <span>{{ item }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% set examples = g.json('/shared/data/componentSamples.json') %}
+  {# Check if there are examples for the current component #}
+  {% if examples[doc.title] %}
+  [% if format in {{ examples[doc.title]|map(attribute='formats')|sum(start=[])|unique|list|tojson }} %]
+  <div class="ap-o-component-intro-references-container">
+    <div id="references" class="ap-o-component-intro-box ap-o-component-intro-box-reference">
+      <h4>Examples</h4>
+      <div class="ap-o-component-intro-box-examples">
+        [% set examples = {{ examples[doc.title]|tojson }} %]
+        [% set examplesCount = 0 %]
+
+        [% for example in examples %]
+        [% if example.formats.includes(format) %]
+        [% set examplesCount = examplesCount + 1 %]
+        <a href="[= example.url =]">[= example.title =]</a>
+        [% endif %]
+        [% endfor %]
+      </div>
+
+      [% if examplesCount > 6 %]
+      <button class="ap-o-component-intro-load-btn" on="tap:references.toggleClass(class='expanded', force=true)">
+        {% do doc.icons.useIcon('icons/chevron-down-light.svg') %}
+        <svg class="ap-o-component-intro-load-btn-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#chevron-down-light"></use></svg>
+      </button>
+      [% endif %]
+    </div>
+  </div>
+  [% endif %]
+  {% endif %}
+</div>
