@@ -1,0 +1,1 @@
+.ap--banner{display:grid;grid-template-columns:repeat(24, minmax(0, 1fr));padding:3em 0 4em;background-color:#005AF0}@media (min-width: 768px){.ap--banner{padding:5em 0 7em}}.ap-o-banner{grid-column:2 / 24}@media (min-width: 768px){.ap-o-banner{grid-column:3 / 20}}.ap-o-banner-headline,.ap-o-banner p{color:#fff}
