@@ -1,10 +1,10 @@
 {# If the doc has content to render, render it and pluck out the TOC if needed #}
 {% if doc.html %}
-{% include '/views/partials/toc.njk' with context %}
+{% include 'views/partials/toc.njk' %}
 
 <section class="ap--content">
-  {% include '/views/partials/sidebar-toggle-button.njk' %}
-  {% include '/views/partials/breadcrumbs.njk' %}
+  {% include 'views/partials/sidebar-toggle-button.njk' %}
+  {% include 'views/partials/breadcrumbs.njk' %}
 
   {% if doc.title and doc.view in ['/views/detail/docs-detail.njk'] %}
   <h1>{{ doc.title }}</h1>
@@ -13,7 +13,7 @@
   {% set formats = ['ads', 'email', 'stories', 'websites'] %}
   {% if (doc.formats|sort or formats) != formats %}
   {% do doc.styles.addCssFile('css/components/molecules/tip.css') %}
-  [% set availableFormats = {{ doc.formats|tojson }} %]
+  [% set availableFormats = {{ doc.formats|dump }} %]
   [% if not availableFormats.includes(format) %]
   <div class="ap-m-tip ap-m-tip-important">
     <div class="ap-m-tip-content">
@@ -28,18 +28,18 @@
   {% endif %}
 
   {% if doc.title and doc.view in ['/views/detail/component-detail.njk'] %}
-  {% include '/views/partials/version-toggle.njk' %}
+  {% include 'views/partials/version-toggle.njk' %}
 
   {% do doc.styles.addCssFile('css/components/organisms/component-intro.css') %}
-  {% include '/views/partials/component-intro.njk' %}
+  {% include 'views/partials/component-intro.njk' %}
   {% endif %}
 
   {# Adds the level toggle button if leveled: true is set in the frontmatter #}
   {% if doc.leveled %}
-  {% include '/views/partials/level-toggle.njk' %}
+  {% include 'views/partials/level-toggle.njk' %}
   {% endif %}
 
-  {{ doc.html|render|safe }}
+  {{ content | safe }}
 </section>
 
 {# If its a empty doc render short information about it #}
@@ -47,7 +47,7 @@
 
 {% do doc.styles.addCssFile('css/components/molecules/tip.css') %}
 <section class="ap--content">
-  {% include '/views/partials/sidebar-toggle-button.njk' %}
+  {% include 'views/partials/sidebar-toggle-button.njk' %}
 
   <h1>{{ doc.title }}</h1>
   <div class="ap-m-tip ap-m-tip-default">

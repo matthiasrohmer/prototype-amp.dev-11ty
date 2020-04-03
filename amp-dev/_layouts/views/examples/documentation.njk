@@ -109,7 +109,7 @@
     {# The examples manual template does not make use of the main partial
     as it's content is rendered from the JSON loaded in doc.example #}
     <section class="ap--content">
-      {% include '/views/partials/sidebar-toggle-button.njk' %}
+      {% include 'views/partials/sidebar-toggle-button.njk' %}
 
       <ul class="ap--format-tags">
         {% do doc.styles.addCssFile('/css/components/atoms/format-tags.css') %}
@@ -118,14 +118,14 @@
         {% endfor %}
       </ul>
 
-      {% include '/views/partials/breadcrumbs.njk' %}
+      {% include 'views/partials/breadcrumbs.njk' %}
       <h1 class="ap--title" id="{{ doc.example.document.title|slug }}">{{ doc.example.document.title }}</h1>
 
       {# Render widget to toggle experiments if there are any #}
       {% if doc.example.document.metadata.experiments %}
       {% with experiments = doc.example.document.metadata.experiments %}
       <script>const experiments = {{ experiments|tojson }}</script>
-      {% include '/views/partials/experiments/experiments.njk' %}
+      {% include 'views/partials/experiments/experiments.njk' %}
       {% endwith %}
       {% endif %}
 

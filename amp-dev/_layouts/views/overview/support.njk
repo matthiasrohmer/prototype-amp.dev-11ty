@@ -14,11 +14,11 @@
       <section class="ap--section">
         <div class="ap--overview-title">
           <div class="ap-m-overview-title">
-            {% include '/views/partials/breadcrumbs.njk' %}
+            {% include 'views/partials/breadcrumbs.njk' %}
             <h1>{{ doc.title }}</h1>
           </div>
         </div>
-        {{ doc.html|render|safe }}
+        {{ content|safe }}
       </section>
     </div>
   </div>

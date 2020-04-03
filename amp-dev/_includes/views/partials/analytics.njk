@@ -1,0 +1,73 @@
+{% if '/documentation/examples/' in doc.pod_path %}
+{% set category = 'examples' %}
+{% elif '/documentation/components/' in doc.pod_path %}
+{% set category = 'components' %}
+{% elif '/documentation/courses/' in doc.pod_path %}
+{% set category = 'courses' %}
+{% elif '/documentation/guides-and-tutorials/' in doc.pod_path %}
+{% set category = 'guides-and-tutorials' %}
+{% endif %}
+
+{% set config = {
+  'vars': {
+    'gtag_id': 'GA_TRACKING_ID',
+    'config': {
+      'GA_TRACKING_ID': {
+        'groups': 'default'
+      }
+    }
+  },
+  'triggers': {
+    'navigation': {
+      'selector': '.ap--header a, .ap-o-burger-menu-link',
+      'on': 'click',
+      'vars': {
+        'event_name': 'navigation',
+        'event_label': 'navigation',
+        'event_category': 'other',
+        'event_action': 'link'
+      }
+    },
+    'searchButton': {
+      'selector': '#searchTriggerOpen',
+      'on': 'click',
+      'vars': {
+        'event_name': 'search',
+        'event_label': 'search',
+        'event_category': 'search',
+        'event_action': 'open'
+      }
+    },
+    'scrolledHalf': {
+      'on': 'scroll',
+      'scrollSpec': {
+        'verticalBoundaries': [50]
+      },
+      'vars': {
+        'event_name': 'scroll',
+        'event_label': 'scroll',
+        'event_category': 'other',
+        'event_action': 'half'
+      }
+    },
+    'scrolledEnd': {
+      'on': 'scroll',
+      'scrollSpec': {
+        'verticalBoundaries': [90]
+      },
+      'vars': {
+        'event_name': 'scroll',
+        'event_label': 'scroll',
+        'event_category': 'other',
+        'event_action': 'end'
+      }
+    }
+  }
+} %}
+
+{% do doc.amp_dependencies.add('amp-analytics', '0.1') %}
+<amp-analytics type="gtag" data-credentials="include" data-block-on-consent>
+  <script type="application/json">
+    {{ config|dump }}
+  </script>
+</amp-analytics>

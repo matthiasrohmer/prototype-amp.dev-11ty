@@ -1,5 +1,7 @@
+{% do doc.reset(page, context) %}
+
 {% if doc.formats %}
-[% supportedFormats formats={{ doc.formats|tojson }} %]
+[% supportedFormats formats={{ doc.formats|dump }} %]
 {% endif %}
 
 {% macro filter(formats='websites, ads, stories, email', level='advanced, beginner') -%}
@@ -8,17 +10,15 @@
 {% else %}
 {% set formats = formats.split(',') %}
 {% set level = level.split(',') %}
-[% if format in {{ formats|map('trim')|list|tojson }} and level in {{ level|map('trim')|list|tojson }} %]
+[% if format in {{ formats|map('trim')|list|dump }} and level in {{ level|map('trim')|list|dump }} %]
 {{ caller() }}
 [% endif %]
 {% endif %}
 {%- endmacro %}
 
 {% macro tip(title, type='note') -%}
-{% with %}
 {% set text = caller() %}
-{% include '/views/partials/tip.njk' %}
-{% endwith %}
+{% include 'views/partials/tip.njk' %}
 {%- endmacro %}
 
 {% macro image(src, width, height, layout='responsive', alt='', caption='', align='', margin='', shadow=True) -%}
@@ -91,12 +91,10 @@
       {% do doc.styles.addCssFile('css/components/molecules/link.css', -2) %}
       {% do doc.styles.addCssFile('css/components/atoms/icon.css', -1) %}
       {% endblock %}
-
-      {{ doc.styles.emit() }}
     </style>
     <link rel="manifest" href="/manifest.json">
 
-    {{ doc.amp_dependencies.emit() }}
+    {{ doc.amp_dependencies.emit()|safe }}
   </head>
   {# The body tag is a block solely for the purpose to be overridable by the samples. #}
   {% block body %}
@@ -105,7 +103,6 @@
     {% block icons %}
 	  <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
-        {{ doc.icons.emit() }}
       </defs>
     </svg>
     {% endblock %}
@@ -144,3 +141,5 @@
     {% endblock %}
   </body>
 </html>
+<!--style:{{ doc.styles.emit()|safe }}-->
+<!--icons:{{ doc.icons.emit()|safe }}-->

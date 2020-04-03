@@ -11,7 +11,7 @@
       {% set scope.categoryFormats = scope.categoryFormats + formats %}
     {% endfor %}
   {% if category %}
-  [% if format in '{{ scope.categoryFormats|unique|list|tojson }}' %]
+  [% if format in '{{ scope.categoryFormats|unique|list|dump }}' %]
   {% set category = category.split('.')[1] if category and category.split('.')|length == 2 else category %}
 
   <a class="ap-m-filter-bubble [% if {{ filter_categories }}.includes(category) and category == '{{ category|slug }}' %]filtered[% endif %]"

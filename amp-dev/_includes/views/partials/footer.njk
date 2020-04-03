@@ -2,7 +2,14 @@
 {% do doc.icons.useIcon('icons/internal.svg') %}
 {% do doc.icons.useIcon('icons/download.svg') %}
 
-{% macro footer() -%}
+{% do doc.icons.useIcon('icons/twitter.svg') %}
+{% do doc.icons.useIcon('icons/youtube.svg') %}
+{% do doc.icons.useIcon('icons/wordpress.svg') %}
+{% do doc.icons.useIcon('icons/github.svg') %}
+{% do doc.icons.useIcon('icons/stackoverflow.svg') %}
+
+
+
 <footer class="ap--footer">
   <div class="ap-o-footer">
     <div class="ap-o-footer-line-top">
@@ -86,20 +93,4 @@
     </div>
 
   </div>
-
 </footer>
-{%- endmacro %}
-
-{% set cache_key = 'footer' + doc.locale.get_language_name() %}
-{% if not doc.pod.amp_dev.template_cache.get(cache_key) %}
-{% do doc.pod.amp_dev.template_cache.add(cache_key, footer()) %}
-{% else %}
-{# The icons need to be added outside the cached partial #}
-{% do doc.icons.useIcon('icons/twitter.svg') %}
-{% do doc.icons.useIcon('icons/youtube.svg') %}
-{% do doc.icons.useIcon('icons/wordpress.svg') %}
-{% do doc.icons.useIcon('icons/github.svg') %}
-{% do doc.icons.useIcon('icons/stackoverflow.svg') %}
-
-{{ doc.pod.amp_dev.template_cache.get(cache_key)|safe }}
-{% endif %}

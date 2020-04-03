@@ -2,7 +2,7 @@
 {% if teaser_doc.view == '/views/detail/success-story-detail.njk' %}
 {% do doc.styles.addCssFile('css/components/molecules/teaser-success-story.css') %}
 <div class="ap-m-teaser ap-m-teaser-success-story"
-    [% if category in {{ doc.collection.list_docs(locale=doc.locale)|map(attribute='category')|unique|list|tojson }} and category not in '{{ teaser_doc.category|slug }}' %]hidden[% endif %]
+    [% if category in {{ doc.collection.list_docs(locale=doc.locale)|map(attribute='category')|unique|list|dump }} and category not in '{{ teaser_doc.category|slug }}' %]hidden[% endif %]
     [hidden]="filter.category != 'none' && filter.category != '{{ teaser_doc.category|slug }}'">
   <a href="{{ teaser_doc.url.path }}">
 
@@ -108,7 +108,7 @@
 {# Example teaser #}
 {% do doc.styles.addCssFile('/css/components/molecules/teaser-example.css') %}
 {% set formats = teaser_doc.formats or ['websites'] %}
-[% if ({{ formats|tojson }}).includes(format) %]
+[% if ({{ formats|dump }}).includes(format) %]
 <div class="ap-m-teaser ap-m-teaser-example" data-category="{{ teaser_doc.category|slug }}" [hidden]="activeFilter.chosenFilter != 'none' && activeFilter.chosenFilter != '{{ teaser_doc.category|slug }}'">
   {% if teaser_doc.used_components %}
   <div class="ap-m-teaser-info-trigger">
@@ -240,7 +240,7 @@
 {% do doc.styles.addCssFile('/css/components/molecules/teaser-guide-tutorial.css') %}
 {% set teaser = teaser_doc.teaser or {} %}
 {% set formats = teaser_doc.formats or ['websites'] %}
-[% if ({{ formats|tojson }}).includes(format) %]
+[% if ({{ formats|dump }}).includes(format) %]
 <div class="ap-m-teaser ap-m-teaser-guide-tutorial">
   <a href="{{ teaser_doc.url.path }}">
 

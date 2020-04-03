@@ -2,7 +2,7 @@
 {% do doc.amp_dependencies.add('amp-bind', '0.1') %}
 
 {% macro active_class(search_path) -%}
-{% if doc.pod_path.startswith(search_path) %}ap-m-nav-link-active{% endif %}
+{% if doc.pod_path.startsWith(search_path) %}ap-m-nav-link-active{% endif %}
 {%- endmacro %}
 
 <label class="ap-o-burger-menu-label" on="tap:AMP.setState({mainmenuopen: !mainmenuopen, noScrollState: !noScrollState})" [class]="mainmenuopen ? 'ap-o-burger-menu-label mainmenuopen' : 'ap-o-burger-menu-label'" for="burger-menu" tabindex="0" role="button" aria-label="{{ _('Burger Menu') }}">
@@ -17,12 +17,12 @@
     {# Sections #}
     {# Top level sections, defined by their top collection and landing page #}
     {% set sections = [
-      (g.collection('/amp-dev/about/'), None),
-      (g.collection('/amp-dev/documentation/'), None),
-      (g.collection('/amp-dev/community/'), None),
-      (g.collection('/amp-dev/events/'), None),
-      ('external', (_('Blog'), 'https://blog.amp.dev')),
-      (None, g.doc('/amp-dev/support/index.md', locale=doc.locale))
+      [g.collection('/amp-dev/about/'), None],
+      [g.collection('/amp-dev/documentation/'), None],
+      [g.collection('/amp-dev/community/'), None],
+      [g.collection('/amp-dev/events/'), None],
+      ['external', (_('Blog'), 'https://blog.amp.dev')],
+      [None, g.doc('/amp-dev/support/index.md', locale=doc.locale)]
     ] %}
 
     {% for section, homepage in sections %}

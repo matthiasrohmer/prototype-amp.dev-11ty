@@ -13,7 +13,7 @@
        toolbar="(min-width: 768px)"
        toolbar-target="ap--sidebar-content">
     <ul>
-      {% include '/views/partials/format-toggle.njk' %}
+      {% include 'views/partials/format-toggle.njk' %}
       <div class="ap-o-sidebar-{{ type if type and type != 'example' else 'default' }}">
 
         <div class="ap-o-sidebar">
@@ -23,7 +23,7 @@
           {% if type == 'example' %}
             {% set categories = g.categories('/amp-dev/documentation/examples/documentation', locale=doc.locale) %}
             {% for category, examples in categories %}
-            [% if format in {{ examples|map(attribute='formats')|sum(start=[])|unique|list|tojson }} %]
+            [% if format in {{ examples|map(attribute='formats')|sum(start=[])|unique|list|dump }} %]
             <ul class="nav-list level-1">
               <li class="nav-item{{ ' active' if doc.category == category }} level-1">
                 <span class="nav-link">
@@ -39,7 +39,7 @@
                 <ul class="nav-list level-2">
                   {% for example in examples %}
                   {% if not example.draft or doc.pod.env.dev %}
-                  [% if format in {{ example.formats|tojson }} %]
+                  [% if format in {{ example.formats|dump }} %]
                   {% set active = true if example == doc %}
                   <li class="nav-item{{ ' active' if active }} level-2"{{ ' autoscroll' if active }}>
                     <a class="nav-link" href="{{ example.url.path }}">{{ example.title }}</a>
@@ -75,7 +75,7 @@
                   {% set formats = component.formats or [] %}
                   {% set activeDocument = true if component.url == doc.url %}
                   {# the latest document might not support a format, hence we have to check if any version supports the format #}
-                  [% if format in {{ component.formats|list|tojson }} %]
+                  [% if format in {{ component.formats|list|dump }} %]
                   <li class="nav-item{{ ' active' if activeDocument }} level-2"{{ ' autoscroll' if activeDocument }}>
                     <a class="nav-link" href="{{ component.url.path }}">{{ component.title }}</a>
                   </li>
@@ -111,7 +111,7 @@
                 {% set activeCollection = true if currentCollectionPaths[-1] == allCollectionPaths[-1] or currentCollectionPaths[-2] == allCollectionPaths[-1] else None %}
 
                 {% set formats = collection.formats or [] %}
-                [% if format in {{ formats|tojson }} %]
+                [% if format in {{ formats|dump }} %]
                 <li class="nav-item{{ ' active' if activeCollection }} level-{{ iteration }}">
                   {% set collection_index = '/content/' + collection.collection_path + '/index.md' %}
                   {% if doc.pod.file_exists(collection_index) %}
@@ -161,7 +161,7 @@
                 {% if not document.hidden %}
                 {% set formats = document.formats or document.collection.formats or [] %}
                 {% set activeDocument = true if document.url == doc.url %}
-                [% if format in {{ formats|tojson }} %]
+                [% if format in {{ formats|dump }} %]
                 <li class="nav-item{{ ' active' if activeDocument }} level-{{ iteration }}"{{ ' autoscroll' if activeDocument }}>
                   {# If the document is part of a tutorial render progress #}
                   {% if document.collection.tutorial %}
