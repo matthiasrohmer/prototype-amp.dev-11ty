@@ -1,4 +1,5 @@
 ---
+layout: /views/custom.njk
 $title: AMP - a web component framework to easily create user-first web experiences
 $titles:
   navigation: Start
@@ -60,13 +61,12 @@ success_stories:
     <div class="ap-o-stage">
       <div class="ap--container-fluid">
         <div class="ap-o-stage-content">
-          <h1 class="ap-o-stage-content-headline">{{ _('AMP is a web component framework to easily create <span style="white-space: nowrap;">user-first</span><br>') }} {% include 'views/partials/rolling-formats.j2' %}</h1>
+          <h1 class="ap-o-stage-content-headline">{{ _('AMP is a web component framework to easily create <span style="white-space: nowrap;">user-first</span><br>') }} {% include 'views/partials/rolling-formats.njk' %}</h1>
           <a href="documentation/index.html" class="ap-o-stage-content-button ap-a-btn">{{ _('Get started') }}</a>
         </div>
       </div>
     </div>
 
-    {% with %}
     {% set case_band_images = [
       {"src": "/static/img/case-band-image-2.jpg", "width": "519", "height": "931"},
       {"src": "/static/img/case-band-image-1.png", "width": "711", "height": "826"},
@@ -77,8 +77,7 @@ success_stories:
       {"src": "/static/img/case-band-image-7.jpg", "width": "478", "height": "828"}
       ]
     %}
-    {% include 'views/partials/case-band.j2' %}
-    {% endwith %}
+    {% include 'views/partials/case-band.njk' %}
   </section>
 
   <section class="ap--news ap--container-fluid">
@@ -433,7 +432,7 @@ success_stories:
     </div>
 
     <div class="ap--container-fluid">
-      {% include 'views/partials/case-grid.j2' %}
+      {% include 'views/partials/case-grid.njk' %}
     </div>
   </section>
 
@@ -449,12 +448,10 @@ success_stories:
 
   <section class="ap--teaser-grid ap--container">
     <div class="ap-o-teaser-grid">
-      <div class="ap-o-teaser-grid-list ap-o-teaser-grid-list-count-{{ teasers|count }}">
+      <div class="ap-o-teaser-grid-list ap-o-teaser-grid-list-count-{{ teasers|length }}">
         {% for success_story in doc.success_stories %}
-        {% with %}
         {% set teaser_doc = success_story %}
-        {% include '/views/partials/teaser.j2' %}
-        {% endwith %}
+        {% include '/views/partials/teaser.njk' %}
         {% endfor %}
       </div>
     </div>
